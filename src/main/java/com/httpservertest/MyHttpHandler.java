@@ -48,7 +48,7 @@ public class MyHttpHandler implements HttpHandler{
         
         //System.out.println(htmlResponse);
 
-        String out = "<h1>Helo World</h1>";
+        String out = "<h1>Helo: " + requestParamValue + " </h1>";
         System.out.println(StringEscapeUtils.escapeJava(out));
 
         httpExchange.sendResponseHeaders(200, out.length());
