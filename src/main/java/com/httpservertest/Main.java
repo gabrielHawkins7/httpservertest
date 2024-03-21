@@ -14,6 +14,7 @@ public class Main {
         HttpServer server = HttpServer.create(new InetSocketAddress("localhost", 8001), 0);
         ThreadPoolExecutor threadPoolExecutor = (ThreadPoolExecutor)Executors.newFixedThreadPool(10);
         server.createContext("/test", new MyHttpHandler());
+        server.createContext("/", new HomePage());
         server.setExecutor(threadPoolExecutor);
         server.start();
         System.out.println("Server Started on Port 8001");
