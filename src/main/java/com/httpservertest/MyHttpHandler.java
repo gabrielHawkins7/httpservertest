@@ -44,7 +44,6 @@ public class MyHttpHandler implements HttpHandler{
                 append("Hello: ").
                 append(requestParamValue).
                 append("</h1>");
-        String htmlResponse = StringEscapeUtils.escapeHtml4(htmlBuilder.toString());
         
         //System.out.println(htmlResponse);
 
