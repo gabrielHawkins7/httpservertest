@@ -23,5 +23,6 @@ public class Main {
     static void addRoutes(HttpServer server){
         server.createContext("/test", new MyHttpHandler());
         server.createContext("/", new HomePage());
+        server.createContext("/submit", new SubmitHandler());
     }
 }

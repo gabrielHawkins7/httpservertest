@@ -3,8 +3,6 @@ package com.httpservertest;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import org.apache.commons.text.StringEscapeUtils;
-
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
 
