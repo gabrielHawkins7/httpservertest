@@ -13,18 +13,11 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-        <h1>This Is the Home Page</h1>
-        <h1>Login:</h1>
-        <form action="/homeLogin" method="POST">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username"><br>
-            <button type="submit">Submit</button>
-        </form>
-        <div id="response-div"></div>
-
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <h1>Users:</h1>
+        {{users_list}}
         
         <script src="" async defer></script>
     </body>

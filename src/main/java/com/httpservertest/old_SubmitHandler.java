@@ -7,7 +7,7 @@ import java.io.OutputStream;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
 
-public class SubmitHandler implements HttpHandler{
+public class old_SubmitHandler implements HttpHandler{
 
     @Override
     public void handle(HttpExchange exchange) throws IOException {
@@ -17,7 +17,7 @@ public class SubmitHandler implements HttpHandler{
             BufferedReader br = new BufferedReader(isr);
             String query = br.readLine();
             System.out.println(query);
-            String response = "Recived:";
+            String response = query;
             exchange.sendResponseHeaders(200, response.length());
             OutputStream os = exchange.getResponseBody();
             os.write(response.toString().getBytes());

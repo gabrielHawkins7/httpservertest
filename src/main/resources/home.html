@@ -11,17 +11,16 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
-        <script src="https://unpkg.com/htmx.org@1.9.11"></script>
     </head>
     <body>
-        <h1>
-            This Is the Home Page
-        </h1>
-        <form hx-post="/submit" hx-swap="none">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name"><br>
+        <h1>This Is the Home Page</h1>
+        <h1>Login:</h1>
+        <form action="/homeLogin" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br>
             <button type="submit">Submit</button>
         </form>
+        <div id="response-div"></div>
 
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
