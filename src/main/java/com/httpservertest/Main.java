@@ -19,7 +19,7 @@ public class Main {
     }
 
     static void addRoutes(HttpServer server){
-        server.createContext("/", new HomePage());
-        server.createContext("/homeLogin", new HomeLogin());
+        // server.createContext("/", new HomePage());
+        // server.createContext("/homeLogin", new HomeLogin());
     }
 }
